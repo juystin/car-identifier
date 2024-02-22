@@ -3,7 +3,7 @@ from postprocess.centroid_math import get_centroid, get_area, get_euclidean_dist
 import random
 
 class Tracker():
-    def __init__(self, max_x, max_y, alive_time=8, max_distance=200):
+    def __init__(self, max_x, max_y, alive_time=30, max_distance=200):
         self.alive_time = alive_time
         self.max_distance = max_distance
         self.max_x = max_x
@@ -16,7 +16,7 @@ class Tracker():
         if not objects_below_max_distance:
             return -1
         
-        min_obj = min(objects_below_max_distance, key=lambda item: item[1])
+        min_obj, min_distance = min(objects_below_max_distance, key=lambda item: item[1])
         return min_obj['id']
     
     def create_id(self):
