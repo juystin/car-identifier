@@ -10,7 +10,7 @@ car-identifier is a Python script designed to track the centroids of vehicles in
 - OPTIMIZED PERFORMANCE: Utilizes .engine, a specialized model for NVIDIA-cards.
 
 ## Installation
-```git clone https://github.com/juystin/car-identifier.git```
+```git clone https://github.com/juystin/car-identifier.git```<br>
 ```pip install -r requirements.txt```
 
 ## Notes
