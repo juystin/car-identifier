@@ -3,7 +3,7 @@ from postprocess.centroid_math import get_centroid, get_area, get_euclidean_dist
 import random
 
 class Tracker():
-    def __init__(self, max_x, max_y, alive_time=30, max_distance=200):
+    def __init__(self, max_x, max_y, alive_time=30, max_distance=300):
         self.alive_time = alive_time
         self.max_distance = max_distance
         self.max_x = max_x
