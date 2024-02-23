@@ -17,4 +17,4 @@ car-identifier is a Python script designed to track the centroids of vehicles in
 .engine files are not provided. Public datasets are available for training via RoboFlow.
 
 ## Usage
-```python car-identifier --detect [path to detection model] --classify [path to classification model] --src [path to source image or video] --results [path to results directory] --detect_frames [path to cropped detections directory]```
+```python car-identifier --detect [path to detection model] --classify [path to classification model] --crops [path to cropped detections directory] --detects [path to original and annotated detections directory] --src [path to source image, video, or directory]```
